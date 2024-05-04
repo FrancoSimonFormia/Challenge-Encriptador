@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="left-container">
+                <header>
+                    <img src="imagenes/Top.svg" alt="Logo de Alura">
+                </header>
+                <div class="text-user-container">
+                    <textarea name="" id="input-user" cols="30" rows="10" placeholder="ingrese el texto aquí"></textarea>
+                </div>
+                <div class="disclaimer-container">
+                    <img src="imagenes/bi_exclamation-circle-fill.png" alt="">
+                    <p id="warning" class="">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="button-container">
+                    <button id="encriptar" onclick="encrypt();">Encriptar</button>
+                    <button id="desencriptar" onclick="decrypt();">Desencriptar</button>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="text-result-container">
+                    <div class="img-container">
+                        <img src="imagenes/background.png" alt="logo" id="background-img">
+                    </div>
+                    <h3 id="placeholder-title">Ningún mensaje fue encontrado</h3>
+                    <textarea name="" id="output-user" cols="15" rows="10" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+                </div>
+            </div>
+        </main>
+
+        <script src="encriptar.js" defer></script>
+    </body>
+</html>
